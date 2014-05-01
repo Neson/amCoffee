@@ -9,16 +9,16 @@ html, body {
 body {
     margin: 0;
     padding: 2px 0;
-    font-size: 12px;
+    font-size: 15px;
     line-height: 1.4em;
-    font-family: Consolas, Lucida Console, monospace;
+    font-family: 'Anonymous Pro', Consolas, Lucida Console, monospace;
     box-sizing: border-box;
-    background-color: white;
+    background-color: #fdf6e3;
 }
 input, textarea, pre {
     font-size: 12px;
     line-height: 1.4em;
-    font-family: Consolas, Lucida Console, monospace;
+    font-family: 'Anonymous Pro', Consolas, Lucida Console, monospace;
 }
 
 #settings {
@@ -37,7 +37,7 @@ line {
     display: block;
     position: relative;
     margin-left: 24px;
-    border-top: #EEE 1px solid;
+    border-top: #eee8d5 1px solid;
 }
 line.prompt::after {
     content: '';
@@ -51,7 +51,7 @@ line.prompt::after {
     background-size: 10px auto;
 }
 line.prompt {
-    color: #0080FF;
+    color: #268bd2;
 }
 line.error::after {
     content: '';
@@ -81,26 +81,26 @@ item {
 }
 
 item.err {
-    color: #F00;
+    color: #dc322f;
 }
 item.undefined {
-    color: #999;
+    color: #93a1a1;
 }
 item.number {
-    color: #20C;
+    color: #6c71c4;
 }
 item.string {
     white-space: pre-wrap;
-    color: #C22;
+    color: #b58900;
 }
 item.string::before,
 item.string::after {
     content: '"';
-    color: #000;
+    color: #b58900;
 }
 item.function {
     white-space: pre-wrap;
-    color: #000;
+    color: #d33682;
 }
 
 item.array {
@@ -138,11 +138,11 @@ item.val {
 }
 
 item.node {
-    color: #999;
+    color: #839496;
 }
 
 item.tag {
-    color: #881280;
+    color: #dc322f;
 }
 item.tag::before {
     margin-right: -.5em;
@@ -156,14 +156,14 @@ item.tag-attribute {
     margin-left: .5em;
 }
 item.tag-attribute-name {
-    color: #994500;
+    color: #cb4b16;
 }
 item.tag-attribute-value {
-    color: #1A1AA6;
+    color: #6c71c4;
 }
 item.tag-attribute-value::before,
 item.tag-attribute-value::after {
-    color: #881280;
+    color: #d33682;
 }
 item.tag-attribute-value::before {
     content: '="';
@@ -182,7 +182,7 @@ item.tag-attribute-value::after {
 }
 
 #prompt {
-    color: #000;
+    color: #586e75;
     outline: none;
     -webkit-user-modify: read-write-plaintext-only;
 }
@@ -190,9 +190,9 @@ item.tag-attribute-value::after {
 #autoComplete {
     overflow-y: scroll;
     position: absolute;
-    color: #000;
-    background: #FFF;
-    border: #AAA 1px solid;
+    color: #586e75;
+    background: #fdf6e3;
+    border: #93a1a1 1px solid;
     border-radius: 5px;
 }
 #autoComplete.below {
@@ -208,17 +208,17 @@ item.tag-attribute-value::after {
     border: transparent 1px solid;
 }
 #autoComplete > li.active {
-    background: #D4D4D4;
+    background: #eee8d5;
 }
 #autoComplete > li:hover {
-    border-color: #CCC;
+    border-color: #eee8d5;
 }
 
 .tips {
     display: none;
     position: fixed;
     padding: .5em 1em;
-    color: #FFF;
+    color: #b58900;
     background: rgba(0,0,0,0.75);
 }
 .tips::after {
